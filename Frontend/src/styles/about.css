@@ -1,0 +1,50 @@
+.hero_img img{
+  width: 30rem;
+  border-radius: 0.3rem;
+}
+
+.wedo{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.what{
+  padding: 1rem 0;
+}
+.what h3{
+  padding: 0.5rem 0;
+}
+.what p{
+  color: gray;
+}
+
+.what-over{
+  display: flex;
+  padding: 1rem 4rem;
+}
+.what-over h2{
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: green;
+}
+
+@media screen and (max-width:900px) {
+
+  .what-over{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .hero_img{
+    width: 100%;
+  }
+  .hero_img img{
+    width: 100%;
+  }
+  .what-over img{
+    width: 100%;
+  }
+  .what-over h2{
+    text-align: center;
+  }
+}

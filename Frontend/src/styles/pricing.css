@@ -1,0 +1,80 @@
+
+/* .pricing-div{
+  padding: 1rem 6rem;
+} */
+.ppl{
+  padding: 1rem 5rem;
+}
+.ppl h2{
+font-weight: 800;
+letter-spacing: 2px;
+}
+.ppl p{
+  color: rgb(172, 172, 172);
+  letter-spacing: 1px;
+}
+
+.avail-plan{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.plan{
+  border: 1.5px solid rgb(200, 200, 200);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 5rem;
+  width: fit-content;
+}
+
+.plan:hover{
+  border-color: green;
+  animation: ease-in-out 3s;
+}
+
+
+
+
+.plan p{
+  font-size: 0.8em;
+  color: rgb(152, 152, 152);
+}
+
+.plan .btn1{
+  background-color: rgb(23, 162, 23);
+  border: none;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.plan h5{
+  font-weight: 350;
+  line-height: 2rem;
+}
+
+.ord{
+background-color: #fff;
+border: 1px solid black;
+border-radius: 1rem;
+margin: 2rem 0;
+}
+
+
+@media screen and (max-width:900px) {
+  .avail-plan{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.8rem;
+  }
+  .ppl{
+    padding: 1rem;
+  }
+  .plan{
+    width: 100%;
+  }
+}

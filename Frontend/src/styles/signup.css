@@ -1,0 +1,124 @@
+.form-submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+
+}
+
+.join{
+  padding: 0.3rem 0;
+  color: gray;
+}
+
+.err{
+ color: red;
+ padding: 0.3rem 0;
+  }
+
+.btn_api button{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(134, 134, 134);
+  padding: 0.5rem 2rem;
+  margin: 1rem 0;
+  border-radius: 0.3rem;
+  width: 15rem;
+  cursor: pointer;
+}
+.btn_api img{
+  width: 1rem;
+}
+.apple-btn img{
+  width: 1.5rem;
+}
+
+label,input{
+  display: block;
+}
+.label{
+  font-size: 0.8em;
+  padding: 0.2rem 0;
+}
+
+input{
+  height: 2rem;
+  width: 15rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.subTn{
+  width: 15rem;
+  background-color: white;
+  border: 1px solid gray;
+  margin: 2rem 0;
+  background-color: green;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+p a{
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  font-weight: 570;
+}
+p a:hover{
+  text-decoration: underline;
+  color: green;
+}
+.or{
+  text-align: center;
+}
+
+
+/*****Login Starts From here***********/
+
+.login-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-over{
+  min-height: 50vh;
+}
+
+.login-details .input{
+  margin-top: 1rem;
+}
+
+.login-details input {
+  margin: 0;
+}
+
+.show{
+  display: flex;
+  align-items: center;
+}
+.show input{
+  width: 0.75rem;
+}
+.login-details button{
+  width: 15rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgb(175, 175, 175);
+color: #fff;
+background-color: green;
+cursor: pointer;
+}
+
+.login-details img{
+ width: 15rem;
+ text-align: center;
+}
+
+.login-details h2{
+  padding-top: 2rem;
+}

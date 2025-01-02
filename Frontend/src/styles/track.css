@@ -1,0 +1,128 @@
+.page-overview{
+  padding: 2rem 5rem;
+}
+
+.trackin{
+ margin-bottom: 4rem;
+}
+.trackin h1{
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.trackin p{
+  color: gray;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+}
+
+.now{
+  color: gray;
+  font-size: 0.6em;
+  font-weight: 550;
+}
+
+.track{
+  margin-bottom: 0.3rem;
+}
+.hero h3{
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.search{
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+.search input{
+  width: 25rem;
+  display: block;
+  height: 3rem;
+  color: gray;
+  padding: 0 1rem;
+  outline: 1px solid rgb(213, 213, 213);
+   border: none;
+   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.043);
+   border-radius: 0.2rem;
+}
+
+.search input::placeholder{
+  color: rgb(172, 171, 171);
+}
+
+
+.search button{
+  display: block;
+  width: 17rem;
+  height: 3rem;
+  background-color: green;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.search button:hover{
+  background-color: rgb(4, 1, 1);
+  transition: all 0.8s;
+}
+
+.combine-search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-details{
+  display: flex;
+ gap: 1.5rem;
+ margin-bottom: 5rem;
+}
+
+.track-details li{
+  list-style-type: none;
+  line-height: 2rem;
+  border-bottom: 1px solid #7e7e7e;
+  padding: 1rem;
+}
+.track-details :last-child{
+  border-bottom: none;
+}
+
+.product-info{
+  background-color: #222;
+  color: #fff;
+
+}
+li span{
+  padding-left: 5rem;
+}
+span.on{
+  color: rgb(239, 152, 70);
+}
+
+@media screen and (max-width:900px) {
+  .page-overview{
+    padding: 1rem;
+  }
+  .search{
+    flex-direction: column;
+    text-align: left;
+  }
+  .combine-search{
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  }
+  .search input{
+    width: 100%;
+  }
+  .search button{
+    width: 100%;
+  }
+  .track-details{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,90 @@
+.hero-section1{
+  padding: 2rem 5rem;
+}
+
+.int p{
+  background-color: rgba(128, 128, 128, 0.127);
+  width: fit-content;
+  color: #414141;
+  font-size: 1em;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.7rem;
+}
+.contact-us{
+  padding: 0 5rem;
+}
+.contact-us h3{
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.contact-us p{
+  color: gray;
+  font-size: 0.8em;
+}
+
+.total-contact{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.line{
+  display: flex;
+  gap: 0.5rem;
+}
+.linn{
+  margin-bottom: 2rem;
+}
+
+.collect-add input{
+  width: 20rem;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 0.3rem;  height: 2.5rem;
+  padding: 0.2rem;
+
+}
+.collect-add textarea{
+  width: 20rem;
+  height: 5rem;
+  padding: 0 0.5rem;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 0.3rem;  
+  padding: 0.2rem;
+
+}
+.email_collect button{
+    padding: 0.5rem;
+    width: 15rem;
+    height: 2.5rem;
+    margin: 2rem 0;
+    border-radius: 0.3rem;
+    border: 1px solid rgb(0, 150, 0);
+    background-color: #ffff;
+}
+
+.email_collect button:hover{
+    background-color: rgb(0, 151, 0);
+    color: white;
+    transition: all ease-in 0.15s;
+}
+
+@media screen and (max-width:900px) {
+  .hero-section1{
+    padding: 1rem;
+  }
+  .contact-us{
+    padding: 1rem;
+  }
+
+  .total-contact{
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: left;
+  }
+  
+}

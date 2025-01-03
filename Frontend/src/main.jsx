@@ -20,9 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Navbar />
-     
         <Routes>
-          
           <Route path='/' element={<HomePage />}/>
           <Route path='/service'element={<Service />}/>
           <Route path='/Tracking' element={<TrackPage />}/>

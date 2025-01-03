@@ -10,14 +10,15 @@ html {
   scrollbar-color: blue;
 }
 
+
 .intro {
   background-color: rgba(128, 128, 128, 0.127);
   width: fit-content;
   color: #414141;
   font-size: 1em;
-
   padding: 0.4rem 0.7rem;
   border-radius: 0.7rem;
+  margin-top: 3rem;
 }
 
 .first-page {
@@ -48,6 +49,7 @@ html {
   padding-right: 3rem;
   outline: none;
   border: 1px solid gray;
+  border-radius: 0;
 }
 
 .btn {

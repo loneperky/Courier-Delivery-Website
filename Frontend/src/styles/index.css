@@ -17,9 +17,14 @@ nav{
   border-bottom: 1px solid black;
   padding: 1rem 5rem;
   transition: all 1s;
-
+  width: 100%;
+  background-color: #ffff;
 }
 nav .logo{
+  color: green;
+}
+
+.logo a{
   color: green;
 }
 nav ul{
@@ -69,13 +74,12 @@ nav a:hover{
 .dropdown{
   background-color: white;
   box-shadow: 3px 10px 6px rgba(0, 0, 0, 0.19);
-  
 }
 .dropdown ul{
   display: flex;
   flex-direction: column;
-
 }
+
 .dropdown li{
 list-style-type: none;
 line-height: 2rem;
@@ -83,6 +87,14 @@ border-bottom: 1.5px solid black;
 padding: 0.5rem 5rem;
 text-transform: uppercase;
 }
+.visited{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
 button{
   padding: 0.5rem 1rem;
 }

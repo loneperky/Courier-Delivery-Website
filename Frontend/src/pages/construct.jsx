@@ -37,29 +37,30 @@ function Test(props) {
   );
 }
 
+
 function Drop() {
   return (
     <>
       <div className="dropdown">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
 
           <li>
-            <a href="/about-us">About</a>
+            <Link to="/about-us">About</Link>
           </li>
           <li>
-            <a href="/tracking">Tracking</a>
+            <Link to="/tracking">Tracking</Link>
           </li>
           <li>
-            <a href="/pricing-plans">Princing</a>
+            <Link to="/pricing-plans">Pricing</Link>
           </li>
           <li>
-            <a href="/contact">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <a href="/signup">Sign Up</a>
+            <Link to="/signup">Sign Up</Link>
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 {
   "rewrite":[
-    {"source":"/(.*)","destination":"/"}
+    {"source":"/(.*)","destination":"courier-delivery-website/"}
   ]
 }

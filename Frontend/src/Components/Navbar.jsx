@@ -13,14 +13,14 @@ function Navbar(){
    }
     return(
       
-        <>
+   <>
     <nav>
       <div className="logo">
          <div className="logosvg">
-  
-   </div>
+       </div>
+
             <h1>OTAXY</h1>
-         
+
         </div>
          <ul className='menu-items'>
             <li>

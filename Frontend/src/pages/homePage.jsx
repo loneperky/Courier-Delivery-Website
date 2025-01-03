@@ -33,7 +33,6 @@ function HomePage() {
               has earned us our position in the industry,We secure,we deliver
               and we transport.
             </p>
-            {/* <button onClick={Change}>Click</button> */}
             <div className="collect">
               <input
                 type="email"

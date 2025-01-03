@@ -154,7 +154,7 @@ html {
 /*........................................................*/
 
 .expertise {
-  background-image: url(./Images/meetings-bg.jpg);
+  background-image: url('/Images/meetings-bg.jpg');
   background-attachment: fixed;
   color: #dfdfdf;
   padding-top: 5rem;
@@ -253,7 +253,7 @@ html {
 }
 
 .deliver-process {
-  background-image: url(./Images/bg.jpg);
+  background-image: url('/Images/bg.jpg');
   background-size: cover;
   display: flex;
   justify-content: space-between;
@@ -375,7 +375,7 @@ html {
 }
 
 footer {
-  background-image: url(./Images/meetings-bg.jpg);
+  background-image: url('/Images/meetings-bg.jpg');
   padding: 5rem;
   padding-bottom: 1.5rem;
   color: #fff;

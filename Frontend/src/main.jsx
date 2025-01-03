@@ -14,6 +14,8 @@ import Login from './pages/Login'
 import Forgot from './pages/forgot'
 import ErrorPage from './pages/404'
 import Dashboard from './pages/dashboard'
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>

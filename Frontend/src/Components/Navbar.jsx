@@ -24,7 +24,7 @@ function Navbar(){
         </div>
          <ul className='menu-items'>
             <li>
-                <NavLink to="/" onClick={HandleMenu}>Home</NavLink>
+                <NavLink to="/">Home</NavLink>
                 
              </li>
              <li>

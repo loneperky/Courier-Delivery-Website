@@ -53,7 +53,7 @@ function Signup() {
                 name="fullname"
                 placeholder="Enter your name"
                 required
-               
+                autoFocus
                 onChange={(e) => setFirstname(e.target.value)}
               />
             </div>

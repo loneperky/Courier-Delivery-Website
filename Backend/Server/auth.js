@@ -8,18 +8,23 @@ dotenv.config();
 
 const router = express.Router();
 
+router.post("/subscribe", async (req, res) => {
+  const { subscribe } = req.body;
+  const newEmail = await pool.query(
+    "INSERT INTO users_information (subscribe) VALUE ($1)"
+  );
+  res.json(newEmail)
+  console.log(newEmail)
+});
+
 router.post("/signup", async (req, res) => {
   const { fullname, email, password } = req.body;
   try {
-    // if(!fullname && !email && !password){
-    //   console.log('Enter details')
-    //   res.json({message:'Please enter your details'})
-    // }
-    const checkUser = await  pool.query(
+    const checkUser = await pool.query(
       "SELECT * FROM users_information WHERE email_address = $1",
       [email]
     );
-    console.log(checkUser)
+    console.log(checkUser);
     if (checkUser.rows.length > 0) {
       res.json({ message: "User already Exist" });
     }
@@ -28,10 +33,10 @@ router.post("/signup", async (req, res) => {
       "INSERT INTO users_information (fullname,email_address,password) VALUES ($1,$2,$3) RETURNING *",
       [fullname, email, hashPassword]
     );
-    console.log(newUser)
+    console.log(newUser);
     res.json({ message: "User registered successfully" });
   } catch (error) {
-    console.log("There was an error",error);
+    console.log("There was an error", error);
   }
 });
 
@@ -66,7 +71,6 @@ router.post("/login", async (req, res) => {
   }
 });
 
-
 export const verifyToken = (req, res, next) => {
   const token = req.header("auth-token");
   if (!token) return res.status(403).json({ error: "Access denied" });
@@ -89,6 +93,18 @@ router.get("/dashboard", verifyToken, async (req, res) => {
     res.json(user.rows[0]);
   } catch (err) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+router.get("/dashboard/name", async (req, res) => {
+  try {
+    const user = await pool.query(
+      "SELECT * FROM users_information WHERE id = $1",
+      [req.user.id]
+    );
+    res.json(user);
+  } catch (error) {
+    console.log(error);
   }
 });
 

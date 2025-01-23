@@ -5,16 +5,29 @@ import { useEffect, useId, useState } from "react";
 import "../styles/app.css";
 import { Perk } from "./construct";
 import { Cost } from "./construct";
+
 import axios from "axios";
 
 function HomePage() {
-  const [name, setName] = useState("Brand Design");
 
+  const [name, setName] = useState("Brand Design");
+  const [email,setEmail] = useState('')
   const Change = () => {
     const myserve = ["UI/UX Design", "Web Design", "Web Dev", "Brand Design"];
     const int = Math.floor(Math.random() * myserve.length);
     setName(myserve[int]);
   };
+
+  const NewsLetter = async (e) =>{
+    e.preventDefault()
+    try {
+      const response = await axios.post("http://localhost:3000/auth/subscribe",{email})
+      alert('Email submitted Successfully')
+    } catch (error) {
+      alert('something went wrong')
+      console.log(error)
+    }
+  }
 
   return (
     <>
@@ -190,13 +203,22 @@ function HomePage() {
           <h1>
             Let's talk about your digital <br /> agency goals
           </h1>
-          <div className="collect collect-ema">
+          <div className="">
+            <div className="collect em">
             <input
-              type="text"
-              className="email"
-              placeholder="Your email address"
-            />
-            <button className="btn1">Subcribe</button>
+                type="text"
+                className="email"
+                
+                onChange={ (e)=> setEmail(e.target.value)}
+                name="subscribe"
+                placeholder="Your email address"
+              />
+             
+              <button onClick={NewsLetter} className="btn1">Subcribe</button><br />
+            </div>
+           
+              {/* { !NewsLetter ? <p>Email added successfully</p>: <p>Please add an Email</p>} */}
+           
           </div>
         </div>
 

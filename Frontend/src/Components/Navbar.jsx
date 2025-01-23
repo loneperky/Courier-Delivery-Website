@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link} from 'react-router-dom'
 import { Drop } from '../pages/construct'
 
 function Navbar(){
@@ -8,9 +8,7 @@ function Navbar(){
    function Menu(){
       setShow(!Show)
    }
-   function HandleMenu(){
-      setShow(false)
-   }
+
     return(
       
    <>
@@ -24,7 +22,7 @@ function Navbar(){
         </div>
          <ul className='menu-items'>
             <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" target="__blank">Home</NavLink>
                 
              </li>
              <li>
@@ -55,7 +53,30 @@ function Navbar(){
              
     </nav> 
     
-    { Show? <Drop />: null  }
+    { Show && ( <div className="dropdown">
+            <ul>
+              <li>
+                <Link  to="/" onClick={Menu}>Home</Link>
+              </li>
+              
+              <li>
+                <Link  to="/about-us" onClick={Menu}>About</Link>
+              </li>
+              <li>
+                <Link  to="/tracking" onClick={Menu}>Tracking</Link>
+              </li>
+              <li>
+                <Link  to="/pricing-plans" onClick={Menu}>Pricing</Link>
+              </li>
+              <li>
+                <Link to="/contact"  onClick={Menu}>Contact Us</Link>
+              </li>
+              <li>
+                <Link  to="/signup" onClick={Menu}>Sign Up</Link>
+              </li>
+            </ul>
+          </div>
+         ) }
   
         </>
     )

@@ -42,6 +42,7 @@ function Login() {
                 placeholder="Enter your email"
                 title="Please enter email"
                 name="email"
+                autoFocus= "yes"
               />
               <input
                 type="password"

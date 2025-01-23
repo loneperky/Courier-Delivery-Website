@@ -68,6 +68,9 @@ html {
 .collect {
   display: flex;
 }
+.em{
+  padding: 1rem 0;
+}
 .hero-img img {
   width: 30rem;
   border-radius: 0.4rem;

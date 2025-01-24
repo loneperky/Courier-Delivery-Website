@@ -1,5 +1,6 @@
 {
   "rewrite":[
     {"source":"/(.*)","destination":"courier-delivery-website/"}
-  ]
+  ],
+       "buildCommand": "next build"
 }
